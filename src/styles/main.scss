@@ -56,3 +56,14 @@ html.sr .load-hidden {
   }
 }
 
+
+
+[data-scroll] {
+  transition: opacity 1s ease 2s;
+}
+[data-scroll="in"] {
+  opacity: 1;
+}
+[data-scroll="out"] {
+  opacity: 0;
+}

@@ -17,6 +17,7 @@
     "@barba/css": "^2.1.15",
     "gsap": "^3.10.4",
     "jquery": "^3.6.0",
+    "scroll-out": "^2.2.12",
     "scrollreveal": "^4.0.9",
     "split-type": "^0.2.5"
   }
