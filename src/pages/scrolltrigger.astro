@@ -1,0 +1,52 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navigation from '../components/Navigation.astro';
+
+---
+
+<Layout title="Welcome to Astro.">
+	<Navigation />
+	<main data-barba="container" data-barba-namespace="scrolltrigger">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="py-5">
+						<h1 class="display-1">
+							Scroll trigger GSAP
+						</h1>
+					</div>
+				</div>
+				<div class="col-12">
+					<img class="img-fluid" src="https://via.placeholder.com/900x900/ec8eaa/ffffff?text=Homepage" alt="">
+				</div>
+			</div>
+		</div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <h4 class="box display-5" style="width:200px; height:200px; background: green;">My Box</h4>
+        </div>
+        <div class="col-6">
+          hello
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          
+        </div>
+        <div class="col-6">
+          <img class="img-fluid" src="https://via.placeholder.com/900x1200/ec8eaa/ffffff?text=Homepage" alt="">
+        </div>
+      </div>
+    </div>
+
+	</main>
+	<script>
+		import '../js/trigger.js';
+	</script>
+</Layout>
+

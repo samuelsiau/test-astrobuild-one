@@ -5,7 +5,7 @@ ScrollOut({
 
 })
 
-barba.hooks.afterEnter((data) => {
+barba.hooks.after((data) => {
   ScrollOut({
 
   })

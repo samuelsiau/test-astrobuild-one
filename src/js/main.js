@@ -1,23 +1,16 @@
 // import $ from 'jquery';
 
 import barba from '@barba/core';
-// import gsap from 'gsap';
-import { homeAnimateLine } from './homeAnimateLine';
 import { pageTransitionOut } from './libs/pageTransitionOut';
 import { pageTransitionIn } from './libs/pageTransitionIn';
 import { delay } from './libs/delay';
 
 
 
-
-homeAnimateLine();
-
-
 // Barba hook here
 
 barba.hooks.after((data) => {
   console.log(data.next.namespace);
-  homeAnimateLine();
 });
 
 barba.hooks.before(() => {
@@ -36,20 +29,20 @@ barba.init({
   transitions: [{
     async leave(data) {
       const done = this.async();
-      pageTransitionOut();
+      pageTransitionIn();
       await delay(1200);
       done();
     },
 
     async enter(data){
       const done = this.async();
-      pageTransitionIn();
+      pageTransitionOut();
       done();
     },
 
     async once(data){
       const done = this.async();
-      pageTransitionIn();
+      pageTransitionOut();
       done();
     }
   }]

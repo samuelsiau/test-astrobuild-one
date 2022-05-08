@@ -1,6 +1,5 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import ScriptsLibrary from '../components/ScriptsLibrary.astro';
 import Navigation from '../components/Navigation.astro';
 
 ---
@@ -11,17 +10,24 @@ import Navigation from '../components/Navigation.astro';
 		<div class="container">
 			<div class="row">
 				<div class="col-12">
-					<h1 class="heading1 load-hidden">Hi, I'm Samuel. I'm a product designer passionate about designing and building delightful websites, products, and design systems that help people make a difference.</h1>
-					<h1 class="heading2">My portfolio is currently under construction.</h1>
+					<div class="py-5">
+						<h1 class="display-4 heading1 load-hidden">
+							Hi, I'm Samuel. I'm a product designer passionate about designing and building delightful websites, products, and design systems that help people make a difference.
+							<br />
+							My portfolio is currently under construction.
+						</h1>
+					</div>
 					<br/>
-					<button class="button button-primary test">Click</button>
+					<button class="btn btn-primary test">Click</button>
 				</div>
 				<div class="col-12">
-					<img src="https://placehold.jp/ec8eaa/ffffff/1600x600.jpg?text=Homepage" alt="">
+					<img class="img-fluid" src="https://via.placeholder.com/900x1600/ec8eaa/ffffff?text=Homepage" alt="">
 				</div>
 			</div>
 		</div>
 	</main>
-	
+	<script>
+		import '../js/home.js';
+	</script>
 </Layout>
 

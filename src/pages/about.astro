@@ -1,6 +1,5 @@
 ---
 import Layout from '../layouts/Layout.astro';
-
 import Navigation from '../components/Navigation.astro';
 
 ---
@@ -11,13 +10,55 @@ import Navigation from '../components/Navigation.astro';
 		<div class="container">
 			<div class="row">
 				<div class="col-12">
-					<h1>About page</h1>
+					<h1 class="display-1" data-aos="fade" data-aos-delay="1500">About page</h1>
 				</div>
 				<div class="col-12">
-					<img src="http://placehold.jp/3d4070/ffffff/900x1600.jpg?text=About%20Us" alt="">
+					<img class="img-fluid" src="https://via.placeholder.com/900x1600/3d4070/ffffff?text=About%20Us" alt="">
 				</div>
 			</div>
 		</div>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-6">
+					<img data-aos="fade-up" src="https://via.placeholder.com/800x600" class="image-fluid" alt="">
+				</div>
+				<div class="col-6">
+				
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-6">
+					
+				</div>
+				<div class="col-6">
+					<img data-aos="fade-up" data-aos-anchor-placement="top-center" src="https://via.placeholder.com/800x600" class="image-fluid" alt="">
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-6">
+					<img data-aos="slide-up" src="https://via.placeholder.com/800x600" class="image-fluid" alt="">
+				</div>
+				<div class="col-6">
+				
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-6">
+					
+				</div>
+				<div class="col-6">
+					<img data-aos="zoom-in" src="https://via.placeholder.com/800x600" class="image-fluid" alt="">
+				</div>
+			</div>
+		</div>
+
 	</main>
+	<script>
+		import '../js/about.js';
+	</script>
 </Layout>
 

@@ -19,13 +19,17 @@ export function homeAnimateLine() {
   //   line.parentNode.appendChild(wrapEl)
   //   wrapEl.appendChild(line)
   // })
+
+  function myCallback() {
+    console.log("Bannner text reveal done")
+  }
+
   
   ScrollReveal().reveal('.heading1 .overflow-hidden .line', { 
     distance: '50px',
     interval: 350,
     beforeReveal: removeVisible,
-    reset: true
+    reset: true,
+    afterReveal: myCallback
   });
-
-
 }
