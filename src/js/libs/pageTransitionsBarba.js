@@ -2,6 +2,7 @@ import barba from '@barba/core';
 import { pageTransitionOut } from './pageTransitionOut';
 import { pageTransitionIn } from './pageTransitionIn';
 import { delay } from './delay';
+import '../../styles/pagaTransitions.scss';
 
 
 export function pageTransitionsBarba(){
