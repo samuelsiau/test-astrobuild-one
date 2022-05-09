@@ -1,5 +1,8 @@
+import { pageTransitionsBarba } from './pageTransitionsBarba';
 import ScrollOut from "scroll-out";
 import barba from "@barba/core";
+
+pageTransitionsBarba();
 
 ScrollOut({
 

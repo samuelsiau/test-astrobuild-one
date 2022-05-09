@@ -1,3 +1,4 @@
+import $ from 'jquery';
 import ScrollReveal from 'scrollreveal';
 import SplitType from 'split-type';
 
